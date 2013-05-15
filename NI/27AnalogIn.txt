@@ -1,0 +1,14 @@
+27AnalogIn
+Voltage_0: PXI2Slot2/ai0
+...
+
+Voltage_15: PXI2Slot2/ai15
+Voltage_16: PXI2Slot3/ai0
+...
+Voltage_26: PXI2Slot3/ai10
+
+Acq Mode: Continuous Samples
+Samples to read: 2M
+Rate(Hz): 1M
+Trigger Type: <None>
+Saple Clock Type: Internal
