@@ -1,15 +1,7 @@
 /*
-  xmega-serial-cmd.c
-
-  This is a simple utility that allows testing a number of functions of the Xmega
-  including the ADC, DAC, GPIOs, Clock selection and Sleep function
-
-  To use you need an EVAL-USB board (or equiv) with PORTF configured for USART at 9600 baud
-
-  Connect to PC with appropriate COM port at 9600baud, 8-N-1 no flow control
-
-  You will get a commandline terminal to set and configure a number of functions
-
+  ASP LFC firmware v0.1
+  
+  This file is based on a template from Boston Android:
   www.bostonandroid.com/examples/xmega-serial-cmd.c
 */
 #define F_CPU 32000000UL
