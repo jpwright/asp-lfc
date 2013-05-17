@@ -34,7 +34,7 @@ status_code_t ebi_test_data_bus(hugemem_ptr_t base)
 	_delay_ms(5);
 
 	/* Write walking 1s */
-	for (p = base, i = 0; i < 15; i++) {
+	for (p = base, i = 0; i < 15; i++) { // i <32 to recreate memory issue
 		hugemem_write32(p, 1UL << i);
 		p = (hugemem_ptr_t)((uint32_t)p + sizeof(uint32_t));
 		
@@ -49,7 +49,7 @@ status_code_t ebi_test_data_bus(hugemem_ptr_t base)
 	_delay_ms(5);
 	
 	/* Read walking 1s, write walking 0s */
-	for (p = base, i = 0; i < 4; i++) {
+	for (p = base, i = 0; i < 4; i++) { // i <32 to recreate memory issue
 		uint32_t        expected = 1UL << i;
 		uint32_t        actual;
 
@@ -73,7 +73,7 @@ status_code_t ebi_test_data_bus(hugemem_ptr_t base)
 	_delay_ms(5);
 
 	/* Read walking 0s */
-	for (p = base, i = 0; i < 4; i++) {
+	for (p = base, i = 0; i < 4; i++) { // i <32 to recreate memory issue
 		uint32_t        actual;
 		uint32_t        expected = ~(1UL << i);
 
