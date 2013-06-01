@@ -14523,6 +14523,7 @@ Metric Code Size 5664</description>
 <segment>
 <wire x1="383.54" y1="73.66" x2="370.84" y2="73.66" width="0.1524" layer="91"/>
 <label x="375.92" y="73.66" size="1.778" layer="95"/>
+<pinref part="U7" gate="A" pin="ENCODE"/>
 </segment>
 </net>
 <net name="PQ3" class="0">

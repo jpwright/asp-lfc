@@ -11870,6 +11870,9 @@ Metric Code Size 5664</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="GND" width="0" drill="0">
+<clearance class="1" value="0.254"/>
+</class>
 </classes>
 <parts>
 <part name="IC1" library="xmega" deviceset="AVR_XMEGA_A1_" device="100A"/>
@@ -12515,7 +12518,7 @@ Metric Code Size 5664</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="JP1" gate="G$1" pin="GND"/>
 <wire x1="124.46" y1="119.38" x2="127" y2="119.38" width="0.1524" layer="91"/>

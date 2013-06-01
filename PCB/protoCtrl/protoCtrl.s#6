@@ -12061,8 +12061,6 @@ Metric Code Size 5664</description>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
 <part name="C24" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
-<part name="JP9" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="JP10" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12227,8 +12225,6 @@ Metric Code Size 5664</description>
 <instance part="GND33" gate="1" x="381" y="15.24"/>
 <instance part="C24" gate="G$1" x="274.32" y="35.56" rot="R180"/>
 <instance part="GND34" gate="1" x="274.32" y="30.48"/>
-<instance part="JP9" gate="G$1" x="360.68" y="139.7" rot="R180"/>
-<instance part="JP10" gate="G$1" x="363.22" y="76.2" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14501,9 +14497,9 @@ Metric Code Size 5664</description>
 <label x="7.62" y="-66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP9" gate="G$1" pin="2"/>
-<wire x1="363.22" y1="139.7" x2="375.92" y2="139.7" width="0.1524" layer="91"/>
-<label x="375.92" y="142.24" size="1.778" layer="95" rot="R180"/>
+<pinref part="U6" gate="A" pin="ENCODE"/>
+<wire x1="383.54" y1="137.16" x2="370.84" y2="137.16" width="0.1524" layer="91"/>
+<label x="375.92" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PQ1" class="0">
@@ -14525,9 +14521,9 @@ Metric Code Size 5664</description>
 <label x="7.62" y="-71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP10" gate="G$1" pin="2"/>
-<wire x1="365.76" y1="76.2" x2="375.92" y2="76.2" width="0.1524" layer="91"/>
-<label x="375.92" y="78.74" size="1.778" layer="95" rot="R180"/>
+<wire x1="383.54" y1="73.66" x2="370.84" y2="73.66" width="0.1524" layer="91"/>
+<label x="375.92" y="73.66" size="1.778" layer="95"/>
+<pinref part="U7" gate="A" pin="ENCODE"/>
 </segment>
 </net>
 <net name="PQ3" class="0">
@@ -14540,20 +14536,6 @@ Metric Code Size 5664</description>
 <pinref part="U7" gate="A" pin="PWRDWN"/>
 <wire x1="383.54" y1="71.12" x2="370.84" y2="71.12" width="0.1524" layer="91"/>
 <label x="375.92" y="71.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="JP9" gate="G$1" pin="1"/>
-<pinref part="U6" gate="A" pin="ENCODE"/>
-<wire x1="363.22" y1="137.16" x2="383.54" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<pinref part="U7" gate="A" pin="ENCODE"/>
-<wire x1="383.54" y1="73.66" x2="365.76" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="JP10" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
